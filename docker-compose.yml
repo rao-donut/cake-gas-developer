@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  gas:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: cake-gas-developer:1.0.0
+    container_name: cake-gas-developer
+    tty: true
+    volumes:
+      - ../workspace:/home/gas/workspace
+
