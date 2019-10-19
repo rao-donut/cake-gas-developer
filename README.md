@@ -7,8 +7,9 @@ Docker container for developing Google App Script locally.
 * Docker Compose
 
 ### Installation
-#### Get codes
+#### Create Project and Get codes
 ```
+mkdir -p your-project && cd your-project
 git clone git@github.com:rao-donut/cake-gas-developer.git
 ```
 
@@ -16,6 +17,13 @@ git clone git@github.com:rao-donut/cake-gas-developer.git
 ```
 cd cake-gas-developer
 make build
+```
+If Build succeeds, a `workspace` directory is created. This directory is mounted on the container.
+```
+your-project
+├workspace
+└cake-gas-developer
+  └...
 ```
 
 #### Run container
